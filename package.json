@@ -1,6 +1,6 @@
 {
   "name": "react-native-auto-backup",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React Native utility for automatic backup & restore of app data (AsyncStorage, SQLite, Realm) to cloud providers like Google Drive and Dropbox.",
   "main": "index.js",
   "module": "dist/index.js",
