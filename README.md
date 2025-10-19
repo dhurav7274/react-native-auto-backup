@@ -41,3 +41,34 @@ npm install react-native-auto-backup
 ```bash
 # or using yarn
 yarn add react-native-auto-backup
+
+ ```js
+ #Use Case
+import React from 'react';
+import { Button } from 'react-native';
+import { initBackup, backupData, restoreData } from 'react-native-auto-backup';
+
+// Initialize backup during app start
+initBackup({
+  provider: 'google', // or 'dropbox'
+  providerConfig: { accessToken: '<GET_FROM_GOOGLE_SIGNIN>' },
+  appName: 'MyCoolApp',
+  encryptKey: 'my-secret-key', // optional AES encryption
+});
+
+export default function App() {
+  return (
+    <>
+      <Button
+        title="Backup Now"
+        onPress={() => backupData({ asyncStorage: true })}
+      />
+      <Button
+        title="Restore"
+        onPress={() => restoreData({ fileId: '<FILE_ID_FROM_DRIVE>' })}
+      />
+    </>
+  );
+}
+
+ 
