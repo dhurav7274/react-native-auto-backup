@@ -3,22 +3,41 @@
 A **React Native utility** for **automatic backup & restore** of app data — including **AsyncStorage**, **SQLite**, and **Realm** — directly to **Google Drive** or **Dropbox** ☁️  
 
 📲 Works on both **Android** & **iOS**  
-🔐 Supports **encryption**, **background backup**, and **manual restore**  
+🔐 Supports **encryption**, **background backup**, and **manual restore**
+
+---
+
+## ⚙️ Features
+
+- 🔄 Auto backup & restore of AsyncStorage / SQLite / Realm  
+- ☁️ Cloud support — Google Drive & Dropbox  
+- 🔐 Client-side encryption (AES-based)  
+- 🕒 Background backup scheduler  
+- 📁 Metadata storage (app version, device ID, date)  
+- 💬 Conflict handling (merge / overwrite)  
+- 🎨 Custom UI support for restore screen  
 
 ---
 
 ## ⚠️ Before Installation
 
-Before installing this package, make sure you have installed **React** and **React Native** in your project.  
-If not, you may face issues because **`react-native-auto-backup`** depends on these **peer dependencies**.
+Before installing this library, make sure your React Native environment is properly set up with **React** and **React Native** already installed.
+
+This library depends on these **peer dependencies**:  
+`react` and `react-native`
+
+---
+
+## 📦 Installation
 
 ```bash
-# Required core libraries
+# Core libraries (if not installed)
 npm install react react-native
 
-# Required peer dependencies
-npm install @react-native-async-storage/async-storage react-native-fs
+```bash
+# Then install this library
+npm install react-native-auto-backup
 
 ```bash
-# Librarie Installation 
-npm i react-native-auto-backup
+# or using yarn
+yarn add react-native-auto-backup
