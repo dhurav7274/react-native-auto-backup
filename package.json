@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "A React Native utility for automatic backup & restore of app data (AsyncStorage, SQLite, Realm) to cloud providers like Google Drive and Dropbox.",
   "main": "index.js",
-  "module": "src/index.js",
+  "module": "dist/index.js",
   "types": "index.d.ts",
+  "private": false,
   "scripts": {
     "start": "node example/App.js",
     "build": "babel src --out-dir dist --copy-files",
@@ -24,13 +25,20 @@
     "cloud-backup",
     "data-restore"
   ],
-  
-  "author": "Dhruv Kumar <dhruv@example.com>",
+  "author": "Dhruv Kumar <dhuravmaheshpur@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
     "react": ">=17.0.0",
     "react-native": ">=0.70.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhurav7274/react-native-auto-backup.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dhurav7274/react-native-auto-backup/issues"
+  },
+  "homepage": "https://github.com/dhurav7274/react-native-auto-backup#readme",
   "dependencies": {
     "@react-native-async-storage/async-storage": "^2.2.0",
     "@react-native-google-signin/google-signin": "^10.0.0",
